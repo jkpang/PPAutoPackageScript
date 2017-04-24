@@ -25,7 +25,7 @@ SECONDS=0
 is_workspace="true"
 # 指定项目的scheme名称
 # (注意: 因为shell定义变量时,=号两边不能留空格,若scheme_name与info_plist_name有空格,脚本运行会失败,暂时还没有解决方法,知道的还请指教!)
-scheme_name="DianCan"
+scheme_name="项目的scheme名称"
 # 工程中Target对应的配置plist文件名称, Xcode默认的配置文件为Info.plist
 info_plist_name="Info"
 # 指定要打包编译的方式 : Release,Debug...
