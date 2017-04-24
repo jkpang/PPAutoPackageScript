@@ -11,8 +11,10 @@
 ##### step4 : 输入 sh PPAutoPackageScript.sh 命令,回车,开始执行此打包脚本
 
 ###GIF示例图
+
 ![GIF1](https://github.com/jkpang/PPAutoPackageScript/blob/master/GIF1.gif)
-![GIF2](https://github.com/jkpang/PPAutoPackageScript/blob/master/Picture/GIF2.gif)
+
+![GIF2](https://github.com/jkpang/PPAutoPackageScript/blob/master/GIF2.gif)
 
 ## 联系方式:
 * Weibo : [@jkpang-庞](http://weibo.com/5743737098/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1)
