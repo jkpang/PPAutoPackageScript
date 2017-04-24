@@ -10,6 +10,10 @@
 ##### step3 : 打开终端, cd到PPAutoPackageScript文件夹 (ps:在终端中先输入cd ,直接拖入PPAutoPackageScript文件夹,回车)
 ##### step4 : 输入 sh PPAutoPackageScript.sh 命令,回车,开始执行此打包脚本
 
+###GIF示例图
+![GIF1](https://github.com/jkpang/PPAutoPackageScript/blob/master/GIF1.gif)
+![GIF2](https://github.com/jkpang/PPAutoPackageScript/blob/master/Picture/GIF2.gif)
+
 ## 联系方式:
 * Weibo : [@jkpang-庞](http://weibo.com/5743737098/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1)
 * Email : jkpang@outlook.com
