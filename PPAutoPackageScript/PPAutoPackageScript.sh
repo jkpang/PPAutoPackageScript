@@ -58,11 +58,10 @@ export_ipa_path="$export_path"
 ipa_name="$scheme_name-v$bundle_version"
 
 # AdHoc,AppStore,Enterprise三种打包方式的区别: http://blog.csdn.net/lwjok2007/article/details/46379945
-echo "================请选择打包方式(输入序号,按回车即可)================"
-echo "                1 AdHoc             "
-echo "                2 AppStore          "
-echo "                3 Enterprise        "
-echo "================请选择打包方式(输入序号,按回车即可)================"
+echo "\033[36;1m请选择打包方式(输入序号,按回车即可) \033[0m"
+echo "\033[33;1m 1. AdHoc \033[0m"
+echo "\033[33;1m 2. AppStore  \033[0m"
+echo "\033[33;1m 3. Enterprise \033[0m"
 # 读取用户输入并存到变量里
 read parameter
 sleep 0.5
@@ -117,9 +116,9 @@ fi
 #  检查是否构建成功
 #  xcarchive 实际是一个文件夹不是一个文件所以使用 -d 判断
 if [ -d "$export_archive_path" ] ; then
-echo " ✅  ✅  ✅  ✅  ✅  ✅  编译成功  ✅  ✅  ✅  ✅  ✅  ✅  "
+echo "\033[32;1m项目构建成功 🚀 🚀 🚀  \033[0m"
 else
-echo " ❌  ❌  ❌  ❌  ❌  ❌  编译失败  ❌  ❌  ❌  ❌  ❌  ❌  "
+echo "\033[31;1m项目构建失败 😢 😢 😢  \033[0m"
 exit 1
 fi
 
@@ -133,13 +132,16 @@ mv $export_ipa_path/$scheme_name.ipa $export_ipa_path/$ipa_name.ipa
 
 # 检查文件是否存在
 if [ -f "$export_ipa_path/$ipa_name.ipa" ] ; then
-echo "🎉  🎉  🎉  🎉  🎉  🎉  ${ipa_name} 打包成功! 🎉  🎉  🎉  🎉  🎉  🎉  "
+echo "\033[32;1m导出 ${ipa_name}.ipa 包成功 🎉  🎉  🎉  \033[0m"
 open $export_path
 else
-echo "❌  ❌  ❌  ❌  ❌  ❌  ${ipa_name} 打包失败! ❌  ❌  ❌  ❌  ❌  ❌  "
-exit 1
+echo "\033[31;1m导出 ${ipa_name}.ipa 包失败 😢 😢 😢  \033[0m"
+# 相关的解决方法
+echo "\033[34mps:以下类型的错误可以参考对应的链接\033[0m"
+echo "\033[34m  1.\"error: exportArchive: No applicable devices found.\" --> http://www.jianshu.com/p/722adedaa3bf \033[0m"
+echo "\033[34m  2.\"No valid iOS Distribution signing identities belonging to team 6F4Q87T7VD were found.\" --> http://fight4j.github.io/2016/11/21/xcodebuild/ \033[0m"exit 1
 fi
 # 输出打包总用时
-echo "打包总用时: ${SECONDS}s ~~~~~~~~~~~~~~~~"
+echo "\033[36;1m使用PPAutoPackageScript打包总用时: ${SECONDS}s \033[0m"
 
 
