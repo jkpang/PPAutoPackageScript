@@ -62,6 +62,7 @@ echo "\033[36;1m请选择打包方式(输入序号,按回车即可) \033[0m"
 echo "\033[33;1m 1. AdHoc \033[0m"
 echo "\033[33;1m 2. AppStore  \033[0m"
 echo "\033[33;1m 3. Enterprise \033[0m"
+echo "\033[33;1m 4. Development \033[0m"
 # 读取用户输入并存到变量里
 read parameter
 sleep 0.5
@@ -76,6 +77,8 @@ then
     ExportOptionsPlistPath="./PPAutoPackageScript/AppStoreExportOptionsPlist.plist"
     elif [ "$method" = "3" ] ; then
     ExportOptionsPlistPath="./PPAutoPackageScript/EnterpriseExportOptionsPlist.plist"
+    elif [ "$method" = "4" ] ; then
+    ExportOptionsPlistPath="./PPAutoPackageScript/DevelopmentExportOptionsPlist.plist"
     else
     echo "输入的参数无效!!!"
     exit 1
