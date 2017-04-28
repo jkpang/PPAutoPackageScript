@@ -4,13 +4,13 @@
 * Xcode 8+
 
 ## Usage 使用方法
-##### step1 : 将PPAutoPackageScript整个文件夹拖入到项目主目录,项目主目录,项目主目录~~~(重要的事情说3遍!😊😊😊)
+#### step1 : 将PPAutoPackageScript整个文件夹拖入到项目主目录,项目主目录,项目主目录~~~(重要的事情说3遍!😊😊😊)
 
-##### step2 : 打开PPAutoPackageScript.sh文件,修改 "项目自定义部分" 配置好项目参数
-##### step3 : 打开终端, cd到PPAutoPackageScript文件夹 (ps:在终端中先输入cd ,直接拖入PPAutoPackageScript文件夹,回车)
-##### step4 : 输入 sh PPAutoPackageScript.sh 命令,回车,开始执行此打包脚本
+#### step2 : 打开PPAutoPackageScript.sh文件,修改 "项目自定义部分" 配置好项目参数
+#### step3 : 打开终端, cd到PPAutoPackageScript文件夹 (ps:在终端中先输入cd ,直接拖入PPAutoPackageScript文件夹,回车)
+#### step4 : 输入 sh PPAutoPackageScript.sh 命令,回车,开始执行此打包脚本
 
-###GIF示例图
+### GIF示例图
 
 ![GIF1](https://github.com/jkpang/PPAutoPackageScript/blob/master/GIF1.gif)
 

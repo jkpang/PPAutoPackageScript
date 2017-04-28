@@ -59,10 +59,10 @@ ipa_name="$scheme_name-v$bundle_version"
 
 # AdHoc,AppStore,Enterprise三种打包方式的区别: http://blog.csdn.net/lwjok2007/article/details/46379945
 echo "\033[36;1m请选择打包方式(输入序号,按回车即可) \033[0m"
-echo "\033[33;1m 1. AdHoc       \033[0m"
-echo "\033[33;1m 2. AppStore    \033[0m"
-echo "\033[33;1m 3. Enterprise  \033[0m"
-echo "\033[33;1m 4. Development \033[0m"
+echo "\033[33;1m1. AdHoc       \033[0m"
+echo "\033[33;1m2. AppStore    \033[0m"
+echo "\033[33;1m3. Enterprise  \033[0m"
+echo "\033[33;1m4. Development \033[0m"
 # 读取用户输入并存到变量里
 read parameter
 sleep 0.5
