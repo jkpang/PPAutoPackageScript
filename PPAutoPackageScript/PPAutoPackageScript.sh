@@ -140,9 +140,9 @@ open $export_path
 else
 echo "\033[31;1m导出 ${ipa_name}.ipa 包失败 😢 😢 😢     \033[0m"
 # 相关的解决方法
-echo "\033[34mps:以下类型的错误可以参考对应的链接\033[0m"
-echo "\033[34m  1.\"error: exportArchive: No applicable devices found.\" --> 可能是ruby版本过低导致,升级最新版ruby再试,升级方法自行百度/谷歌,GitHub issue: https://github.com/jkpang/PPAutoPackageScript/issues/1#issuecomment-297589697"
-echo "\033[34m  2.\"No valid iOS Distribution signing identities belonging to team 6F4Q87T7VD were found.\" --> http://fight4j.github.io/2016/11/21/xcodebuild/ \033[0m"
+echo "\033[33mps:以下类型的错误可以参考对应的链接\033[0m"
+echo "\033[33m  1.\"error: exportArchive: No applicable devices found.\" --> 可能是ruby版本过低导致,升级最新版ruby再试,升级方法自行百度/谷歌,GitHub issue: https://github.com/jkpang/PPAutoPackageScript/issues/1#issuecomment-297589697"
+echo "\033[33m  2.\"No valid iOS Distribution signing identities belonging to team 6F4Q87T7VD were found.\" --> http://fight4j.github.io/2016/11/21/xcodebuild/ \033[0m"
 exit 1
 fi
 # 输出打包总用时

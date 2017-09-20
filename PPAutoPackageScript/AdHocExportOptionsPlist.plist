@@ -4,5 +4,9 @@
 <dict>
 	<key>method</key>
 	<string>ad-hoc</string>
+	<key>signingStyle</key>
+	<string>automatic</string>
+	<key>compileBitcode</key>
+	<false/>
 </dict>
 </plist>
