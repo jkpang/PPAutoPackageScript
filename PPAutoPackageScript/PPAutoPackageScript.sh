@@ -43,8 +43,8 @@ project_name=`find . -name *.xcodeproj | awk -F "[/.]" '{print $(NF-1)}'`
 # 获取版本号,内部版本号,bundleID
 info_plist_path="$project_name/$info_plist_name.plist"
 bundle_version=`/usr/libexec/PlistBuddy -c "Print CFBundleShortVersionString" $info_plist_path`
-bundle_build_version=`/usr/libexec/PlistBuddy -c "Print CFBundleIdentifier" $info_plist_path`
-bundle_identifier=`/usr/libexec/PlistBuddy -c "Print CFBundleVersion" $info_plist_path`
+bundle_build_version=`/usr/libexec/PlistBuddy -c "Print CFBundleVersion" $info_plist_path`
+bundle_identifier=`/usr/libexec/PlistBuddy -c "Print CFBundleIdentifier" $info_plist_path`
 
 # 删除旧.xcarchive文件
 rm -rf ~/Desktop/$scheme_name-IPA/$scheme_name.xcarchive
